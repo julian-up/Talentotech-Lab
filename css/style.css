@@ -4,16 +4,7 @@
 @import url(header.css);
 @import url(nav-bar.css);
 @import url(aside.css);
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-.main {
-    flex: 67%;
-    height: 400px;
-    background-color: white;
-}
+@import url(content.css);
 
 @media screen and (max-width: 800px) {
     .navbar, .row {
