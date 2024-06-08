@@ -13,8 +13,3 @@
 .navbar a:hover {
     background-color: var(--color-primary-dark);
 }
-@media screen and (max-width: 700px) {
-    .navbar {
-        flex-flow: column wrap;
-    }
-}

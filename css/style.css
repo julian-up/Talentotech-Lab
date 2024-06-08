@@ -3,3 +3,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 @import url(header.css);
 @import url(nav-bar.css);
+@import url(aside.css);
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.main {
+    flex: 67%;
+    height: 400px;
+    background-color: white;
+}
+
+@media screen and (max-width: 800px) {
+    .navbar, .row {
+        flex-flow: column wrap;
+    }
+    .navbar a{
+        padding: 20px;
+    }
+    header div img {
+        width: 200px;
+        height: 150px;
+    }
+    header h1 {
+        font-size: 2em;
+        margin: 10px 0 10px;
+    }
+    header p {
+        margin: 0 0 20px;
+        font-size: 1em;
+    }
+    aside img {
+        width: 430px;
+        height: 250px;
+    }
+}
