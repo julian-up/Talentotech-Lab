@@ -1,0 +1,35 @@
+#catalogo h1{
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    background-color: var(--color-primary-dark);
+    padding: 35px;
+    margin-top: 0px;
+}
+.shonen-title {
+    font-size: 2em;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+.manga-title {
+    font-size: 1em;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+.shonen{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.shonen img {
+    margin: 10px;
+}
+.card {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 40px 0 40px;
+    border-radius: 20px;
+    margin: 5px;
+}

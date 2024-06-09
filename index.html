@@ -18,12 +18,12 @@
     </header>
     <!-- Navegacion -->
     <nav class="navbar">
-        <a href="/index.html">Inicio</a>
-        <a href="#">Catalogo</a>
+        <a href="#row">Inicio</a>
+        <a href="#catalogo">Catalogo</a>
         <a href="#">Nosotros</a>
     </nav>
     <!-- Aside, Donde estara el catalogo  -->
-    <div class="row">
+    <div class="row" id="row">
         <aside>
             <div>
                 <h2>Tus sitio Favorito para leer manga!</h2>
@@ -31,18 +31,34 @@
             </div>
             <!-- aqui tenemos el listado de catalogos de los mangas -->
             <h3>Catalogo</h3>
-            <a href="#" class="manga-link">
+            <a href="#catalogo" class="manga-link">
                 <h4>SHONEN</h4>
                 <img src="img/Shonen.jpg" alt="shonen" class="manga-img">
             </a>
             <a href="#" class="manga-link">
-                <h4>YAOI</h4>
-                <img src="img/Yaoi.jpg" alt="yaoi" class="manga-img">
-            </a>            
-            <a href="#" class="manga-link">
                 <h4>SEINEN</h4>
                 <img src="img/Seinen.jpg" alt="seinen" class="manga-img">
-            </a>            
+            </a>
+            <a href="#" class="manga-link">
+                <h4>SHOJO</h4>
+                <img src="img/shojo.jpg" alt="shojo" class="manga-img">
+            </a>
+            <a href="#" class="manga-link">
+                <h4>JOSEI</h4>
+                <img src="img/josei.jpg" alt="josei" class="manga-img">
+            </a>  
+            <a href="#" class="manga-link">
+                <h4>YAOI +18</h4>
+                <img src="img/Yaoi.jpg" alt="yaoi" class="manga-img">
+            </a>
+            <a href="#" class="manga-link">
+                <h4>YURI +18</h4>
+                <img src="img/Yuri.jpg" alt="yuri" class="manga-img">
+            </a>
+            <a href="#" class="manga-link">
+                <h4>HENTAI +18</h4>
+                <img src="img/Hentai.jpg" alt="hentai" class="manga-img">
+            </a>                 
         </aside>
         <!-- Section donde estara todo el Contenido! -->
         <section class="main">
@@ -52,35 +68,112 @@
                 <a href="">
                     <img src="/img/dragonball.jpg" alt="dragonball">
                 </a>
+                <a href="#dragon-ball" class="more-manga">Vas a ser Catalogeado</a>
             </article>
             <article>
-                <h4>Masashi Kishimoto | Naruto Shippuden</h4>
+                <h4>Masashi Kishimoto | Naruto shippuden</h4>
                 <a href="">
                     <img src="/img/naruto.jpg" alt="dragonball">
                 </a>
             </article>
-            <a href="#" id="more-manga">Ver Catalogo</a>
+            <a href="#naruto" class="more-manga">Vas a ser Catalogeado</a>
         </section>
-        <!-- <section class="main">
-            <article>
-                <a href="/lector-manga.html">
-                    <img src="/img/manga-tomo-1.png" alt="Son Goku y Sus Amigos">
-                </a>
-                <p>Autor: Akira Toriyama</p>
-                <p>Paginas: 87</p>
-            </article>
-            <article>
-                <a href="/lector-manga-2.html">
-                    <img src="/img/manga-tomo-2.png" alt="Son Goku y Sus Amigos">
-                </a>
-                <p>Autor: Akira Toriyama</p>
-                <p>Paginas: 93</p>
-            </article>
-        </section> -->
-    </div> <!-- /row -->
-    
-    <footer>
+        <!--  -->
+    </div> <!-- /row --> 
+    <div id="catalogo">
         <h1>catalogo</h1>
+    </div>
+    <!-- Dragon Ball -->
+    <h1 class="shonen-title">shonen</h1>
+    <h2 class="manga-title" id="dragon-ball">Dragon Ball</h2>
+    <div class="shonen">
+        <div class="card">
+            <a href="/lector-manga.html">
+                <img src="/img/manga-tomo-1.png" alt="tomo1">
+            </a>
+            <p>Manga: Dragon Ball</p>
+            <p>Autor: Akira Toriyama</p>
+            <p>Paginas: 87</p>
+        </div>
+        <div class="card">
+            <a href="/lector-manga-2.html">
+                <img src="/img/manga-tomo-2.png" alt="tomo2">
+            </a>
+            <p>Manga: Dragon Ball</p>
+            <p>Autor: Akira Toriyama</p>
+            <p>Paginas: 93</p>
+        </div>
+        <div class="card">
+            <a href="/en-proceso.html">
+                <img src="/img/manga-tomo-3.png" alt="tomo3">
+            </a>
+            <p>Manga: Dragon Ball</p>
+            <p>Autor: Akira Toriyama</p>
+            <p>Paginas: N/A</p>
+        </div>
+        <div class="card">
+            <a href="/en-proceso.html">
+                <img src="/img/manga-tomo-4.png" alt="tomo4">
+            </a>
+            <p>Manga: Dragon Ball</p>
+            <p>Autor: Akira Toriyama</p>
+            <p>Paginas: N/A</p>
+        </div>
+        <div class="card">
+            <a href="/en-proceso.html">
+                <img src="/img/manga-tomo-5.png" alt="tomo5">
+            </a>
+            <p>Manga: Dragon Ball</p>
+            <p>Autor: Akira Toriyama</p>
+            <p>Paginas: N/A</p>
+        </div>
+    </div>
+    <!-- Naruto -->
+    <h2 class="manga-title">Naruto</h2>
+    <div class="shonen" id="naruto">
+        <div class="card">
+            <a href="/en-proceso.html">
+                <img src="/img/naruto-tomo/1.jpg" alt="tomo1">
+            </a>
+            <p>Manga: Naruto</p>
+            <p>Autor: Masashi Kishimoto</p>
+            <p>Paginas: 87</p>
+        </div>
+        <div class="card">
+            <a href="/lector-manga-2.html">
+                <img src="/img/naruto-tomo/2.jpg" alt="tomo2">
+            </a>
+            <p>Manga: Naruto</p>
+            <p>Autor: Masashi Kishimoto</p>
+            <p>Paginas: 87</p>
+        </div>
+        <div class="card">
+            <a href="/en-proceso.html">
+                <img src="/img/naruto-tomo/3.jpg" alt="tomo3">
+            </a>
+            <p>Manga: Naruto</p>
+            <p>Autor: Masashi Kishimoto</p>
+            <p>Paginas: 87</p>
+        </div>
+        <div class="card">
+            <a href="/en-proceso.html">
+                <img src="/img/naruto-tomo/4.jpg" alt="tomo4">
+            </a>
+            <p>Manga: Naruto</p>
+            <p>Autor: Masashi Kishimoto</p>
+            <p>Paginas: 87</p>
+        </div>
+        <div class="card">
+            <a href="/en-proceso.html">
+                <img src="/img/naruto-tomo/5.jpg" alt="tomo5">
+            </a>
+            <p>Manga: Naruto</p>
+            <p>Autor: Masashi Kishimoto</p>
+            <p>Paginas: 87</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; Manganat Para Amantes del Manga</p>
     </footer>
 </body>
 </html>

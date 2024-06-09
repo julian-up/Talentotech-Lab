@@ -5,6 +5,12 @@
 @import url(nav-bar.css);
 @import url(aside.css);
 @import url(content.css);
+@import url(catalogo.css);
+@import url(pdf-view.css);
+
+.fondo {
+    background-color: black;
+}
 
 @media screen and (max-width: 800px) {
     .navbar, .row {
@@ -28,5 +34,10 @@
     aside img {
         width: 430px;
         height: 250px;
+    }
+    .shonen {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
     }
 }
