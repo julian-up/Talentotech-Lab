@@ -1,0 +1,13 @@
+h1 {
+    color: white;
+}
+.aviable, a img {
+    display: flex;
+    justify-content: center;
+}
+.caja, label, input {
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}

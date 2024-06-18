@@ -3,34 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            background-color: black;
-        }
-        h1 {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 400px;
-            color: green;
-        }
-        a {
-            text-decoration: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-        a:hover {
-            color: brown;
-        }
-    </style>
+    <title>Buscar Manga</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/img/favicon.png">
 </head>
 <body>
-    <h1>Nos encontramos trabajando en hacer que esto funcione</h1>
-    <a href="/index.html">Volver</a>
+    <header>
+        <h1>BUSCAR</h1>
+        <nav class="navbar">
+            <a href="/index.html">Inicio</a>
+        </nav>
+    </header>
+    <section>
+        <h2 class="aviable">¡Busquemos el Manga!</h2>
+        <form action="/login/auth" method="post">
+            <div class="caja">
+                <label for="usuario" class=""> Nombre: </label>
+                <input type="text" id="name" name="name" placeholder="Nombre del Manga" required>
+                <label for="correo" class=""> Autor: </label>
+                <input type="text" id="Autor" name="Autor" placeholder="Autor" required>
+                <label for="password" class=""> Tomo </label>
+                <input type="text" id="id" name="id" placeholder="Tomo, ¿1?" required>
+            </div>	
+            <div class="caja">
+                <button type="button" onclick="getData()">Buscar</button>
+                <button type="reset">Limpiar</button>
+            </div>
+            <a href="#">
+                <img src="#" alt="innerHTML">
+            </a>
+            <!--<div class="caja ani">
+                <label for="msg" class="rojo"> Mensaje: </label>
+                <textarea id="msg" name="msg" cols="50" rows="4"></textarea><br><br>
+            </div>
+            <div class="container column">
+                <p style="color: black">Ejemplo parrafo para el radio</p>
+                <div class="caja">	
+                    <label class="rojo" for="tipide">Identificacion</label><br>
+                    <input type="radio" name="tipide" value="CC">Cedula de Ciudadania<br>
+                    <input type="radio" name="tipide" value="CE">Cedula Extranjera<br>
+                    <input type="radio" name="tipide" value="TI">Cedula de Ciudadania<br>
+                    <input type="radio" name="tipide" value="NUIP">Cedula de Ciudadania<br>
+                    <input type="radio" name="tipide" value="PA">Cedula de Ciudadania<br>
+                </div>
+                <p style="color: black">Ejemplo parrafo para el check</p>
+                <div class="caja">
+                    <label class="rojo" for="pasatiempo">pasatiempo</label><br>
+                    <input type="checkbox" name="tipide" value="T">Trotar<br>
+                    <input type="checkbox" name="tipide" value="C">Correr<br>
+                    <input type="checkbox" name="tipide" value="N">Nadar<br>
+                    <input type="checkbox" name="tipide" value="D">Dormir<br>
+                    <input type="checkbox" name="tipide" value="L">Leer<br>
+                </div> 
+            </div>-->
+	
+        </form>
+    </section>
+    <script src="/JavaScript/main.js"></script>
 </body>
 </html>
