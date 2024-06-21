@@ -19,7 +19,7 @@ async function consultar(e) {
 		for(let p = 0; p < datos.length ; p++) {
 			//Muestra todos los datos del JSON (console.log( p + "--" + JSON.stringify(datos[p])) ;)
 			for ( let u in datos[p]) {
-				if (datos[p].id == 3 ) {
+				if (datos[p].id == 4 ) {
 					console.log( u + "---" + datos[p].email );
 					e.value = datos[p].email ;
 				}
